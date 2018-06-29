@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>客户满意度反馈表</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>序号</th>
+            <th>反馈满意度</th>
+            <th>关怀满意度</th>
+        </tr>
+        {% for foo in ts %}
+            <tr>
+
+                <td>{{ forloop.counter }}</td>
+                <td>{{ foo.sor }}</td>
+                <td>{{ foo.ss }}</td>
+
+            </tr>
+
+        {% endfor %}
+
+    </table>
+</body>
+</html>
